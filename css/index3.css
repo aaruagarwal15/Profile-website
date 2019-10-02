@@ -1,0 +1,100 @@
+/* ========== Contact page ==========*/
+
+
+/* html,
+body {
+    background-color: #F5F5F5
+}*/
+
+#contact {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+#contact_row {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*====== About me =============*/
+
+#about {
+    border-width: 0px 5px 0px 0px;
+    border-style: double;
+    border-color: #DADDDD;
+}
+
+#about_head {
+    /* width: 100%; */
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+#about_data {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1em 4em 2em 4em;
+    text-align: justify;
+}
+
+
+/* ========== QUESTIONS ===========*/
+
+#contact_col {
+    align-items: center;
+    margin: 0;
+}
+
+#outer_form {
+    height: 100%;
+    /*  width: 100%; */
+}
+
+#contact_form {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#ques {
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+}
+
+.form-text {
+    font-size: 12px;
+    align-self: left;
+    visibility: hidden;
+}
+
+
+/* =========== LAST LINE ========= */
+
+#last_line {
+    height: 10px;
+    width: 100%;
+    background-color: #754C2D;
+}
+
+@media screen and (max-width: 500px) {
+    #about {
+        border-width: 0px 0px 5px 0px;
+        border-style: double;
+        border-color: #DADDDD;
+    }
+}

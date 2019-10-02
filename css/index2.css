@@ -1,0 +1,586 @@
+/* ========== more projects ======= */
+
+#projects {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+#p_row {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+#pr1 {
+    height: auto;
+    padding: 0;
+}
+
+#pr2 {
+    height: auto;
+    padding: 0;
+}
+
+#pr3 {
+    height: auto;
+    padding: 0;
+}
+
+#pr21 {
+    height: 60%;
+    width: 100%;
+    padding: 0;
+}
+
+#pr22 {
+    height: 40%;
+    width: 100%;
+    padding: 0;
+}
+
+#pr31 {
+    height: 40%;
+    width: 100%;
+    padding: 0;
+}
+
+#pr32 {
+    height: 60%;
+    width: 100%;
+    padding: 0;
+}
+
+
+/* =========================*/
+
+
+/* project 1 - pet feeder */
+
+
+/* =========================*/
+
+.grid_1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.grid_1 figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.grid_1 #pet_bg {
+    background: #B46E26;
+}
+
+.grid_1 figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.7;
+}
+
+.grid_1 figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid_1 figure figcaption::before,
+.grid_1 figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid_1 figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid_1 figure figcaption>a {
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #EDECEA;
+}
+
+.grid_1 figure figcaption>a:hover {
+    color: white;
+    font-size: 14px;
+}
+
+.grid_1 figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid_1 figure h2 span {
+    font-weight: 800;
+}
+
+.grid_1 figure h2,
+.grid_1 figure p {
+    margin: 0;
+}
+
+.grid_1 figure p {
+    letter-spacing: 1px;
+    font-size: 60.5%;
+}
+
+figure.effect-pr1 {
+    background: #B46E26;
+}
+
+figure.effect-pr1 img {
+    height: 390px;
+}
+
+figure.effect-pr1 figcaption {
+    padding: 3em;
+}
+
+figure.effect-pr1 figcaption::before,
+figure.effect-pr1 figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+figure.effect-pr1 figcaption::before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+figure.effect-pr1 figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+figure.effect-pr1 h2 {
+    padding-top: 26%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-pr1 p {
+    padding: 0.5em 2em;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+}
+
+figure.effect-pr1 img,
+figure.effect-pr1 h2 {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+}
+
+figure.effect-pr1 img,
+figure.effect-pr1 figcaption::before,
+figure.effect-pr1 figcaption::after,
+figure.effect-pr1 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-pr1:hover img {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-pr1:hover figcaption::before,
+figure.effect-pr1:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-pr1:hover h2,
+figure.effect-pr1:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-pr1:hover figcaption::after,
+figure.effect-pr1:hover h2,
+figure.effect-pr1:hover p,
+figure.effect-pr1:hover img {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+
+/* =========================*/
+
+
+/* project- 21 metro map */
+
+
+/* =========================*/
+
+figure.effect-metro {
+    background-color: #8D9A99;
+}
+
+figure.effect-metro figcaption {
+    text-align: right;
+}
+
+figure.effect-metro h2,
+figure.effect-metro p {
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px;
+}
+
+figure.effect-metro p {
+    top: 120px;
+    line-height: 1.5;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.grid_1 figure figcaption>#metro {
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    font-size: 13px;
+    bottom: 25px;
+    text-align: center;
+    color: #EDECEA;
+}
+
+.grid_1 figure figcaption>#metro:hover {
+    color: white;
+    font-size: 14px;
+}
+
+figure.effect-metro h2 {
+    top: 30px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-metro:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-metro h2::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+
+figure.effect-metro h2::after,
+figure.effect-metro p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-metro:hover h2::after,
+figure.effect-metro:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================*/
+
+
+/* project- 22 food ordering website */
+
+
+/* =========================*/
+
+.grid_1 #food_bg {
+    background: #B46E26;
+}
+
+figure.effect-food figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+}
+
+figure.effect-food h2 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    color: #E6F0F6;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+}
+
+.grid_1 figure figcaption>#food {
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    font-size: 13px;
+    bottom: 25px;
+    text-align: center;
+    color: #EDECEA;
+}
+
+.grid_1 figure figcaption>#food:hover {
+    color: white;
+    font-size: 14px;
+}
+
+figure.effect-food figcaption::before,
+figure.effect-food p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-food p {
+    position: absolute;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+figure.effect-food:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0, -5%, 0) translate3d(0, -20px, 0);
+    transform: translate3d(0, -5%, 0) translate3d(0, -20px, 0);
+}
+
+figure.effect-food:hover figcaption::before,
+figure.effect-food:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================*/
+
+
+/* project- 31 Hashing */
+
+
+/* =========================*/
+
+.grid_1 #hash_bg {
+    background-color: black;
+}
+
+figure.effect-hash img {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-hash:hover img {
+    opacity: 0.5;
+}
+
+figure.effect-hash figcaption::before,
+figure.effect-hash figcaption::after {
+    position: absolute;
+    top: 10px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-hash figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+figure.effect-hash figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+figure.effect-hash h2 {
+    /* padding-top: 30%; */
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+}
+
+figure.effect-hash p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-hash:hover figcaption::before,
+figure.effect-hash:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+figure.effect-hash:hover h2,
+figure.effect-hash:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================*/
+
+
+/* project- 32 RR DBSCAN */
+
+
+/* =========================*/
+
+figure.effect-dbscan {
+    background-color: #529EA7;
+}
+
+figure.effect-dbscan img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+figure.effect-dbscan:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-dbscan h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-dbscan p {
+    margin: 1em 0 0;
+    padding: 3em;
+    border: 1px solid #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0) scale(1.1);
+    transform: translate3d(0, 20px, 0) scale(1.1);
+}
+
+figure.effect-dbscan:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-dbscan:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+.grid_1 figure figcaption>#dbscan {
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    font-size: 13px;
+    bottom: 25px;
+    text-align: center;
+    color: #EDECEA;
+}
+
+.grid_1 figure figcaption>#dbscan:hover {
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 50em) {
+    .col {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .grid_1 figure {
+        display: inline-block;
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    #pr1 {
+        height: 10px auto;
+    }
+    #head_pet {
+        padding: 2%;
+    }
+}
